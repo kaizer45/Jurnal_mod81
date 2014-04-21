@@ -5,12 +5,12 @@ public class no1{
 		public int factorial(int x){
 			int temp = 0;
 			if(x > 0){
-				temp = x - 1;
+				temp = factorial(x - 1);
 			}
 			else{
 				temp = x;
 			}
-			return(factorial(temp));
+			return(temp);
 		}
 		System.out.print(factorial(n));
 		System.out.println();
